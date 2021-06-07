@@ -140,6 +140,7 @@ class _TopupScreenState extends State<TopupScreen>
       );
     });
     if (response.ok) {
+      Segment.track(eventName: 'TopUp Success, Token Minting..');
       showDialog(
         context: context,
         builder: (context) {
@@ -152,6 +153,7 @@ class _TopupScreenState extends State<TopupScreen>
       });
     } else {
       if (!response.msg.contains('Cancelled by user')) {
+        Segment.track(eventName: 'Cancelled top up');
         showDialog(
           context: context,
           builder: (context) => TopUpFailed(),

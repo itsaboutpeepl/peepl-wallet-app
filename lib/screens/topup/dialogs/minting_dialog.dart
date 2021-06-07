@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:flutter_segment/flutter_segment.dart';
 import 'package:peepl/models/app_state.dart';
 import 'package:peepl/models/community/community.dart';
 import 'package:peepl/models/tokens/token.dart';
@@ -81,6 +82,7 @@ class _MintingDialogState extends State<MintingDialog>
       converter: _MintingDialogViewModel.fromStore,
       onWillChange: (prevVM, nextVM) {
         if (prevVM.secondaryToken.amount != nextVM.secondaryToken.amount) {
+          Segment.track(eventName: 'Token Mint Success, showed success dialog');
           // close the dialog and show success dialog
           Navigator.of(context).pop();
           showDialog(
