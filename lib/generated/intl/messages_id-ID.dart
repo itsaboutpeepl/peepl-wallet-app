@@ -58,7 +58,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Batal"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Silakan pilih cara Anda melindungi dompet dengan memilih metode berikut"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Tutup"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("Segera hadir"),
         "community": MessageLookupByLibrary.simpleMessage("komunitas"),
@@ -105,8 +104,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Deposit dari Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Deposit dari Ethereum atau BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Deposit"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("Deposit Dollar pertama Anda"),
@@ -177,11 +174,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Dana tidak cukup"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Bayar dan terima bayaran atau kirim uang ke teman tanpa biaya atau friksi"),
+            "Dukung restoran lokal Anda, pada platform yang memberi mereka bagian lebih besar dari apa yang Anda bayar"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Buat akun token aman dan cerdas untuk mengakses keuangan terdesentralisasi"),
+            "Isi ulang dompet Peepl Anda, sebanyak atau sesedikit yang Anda suka, langsung dari rekening bank Anda menggunakan Stripe. Cepat & aman"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Depositkan \$ dan tukarkan dengan mata uang lainnya dengan biaya minimal"),
+            "10% kembali ke dompet Anda, untuk dibelanjakan lagi di masa mendatang"),
         "invalid_number": MessageLookupByLibrary.simpleMessage("Nomor salah"),
         "invalid_pincode":
             MessageLookupByLibrary.simpleMessage("Kode pin salah"),
@@ -214,8 +211,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Masuk"),
         "logout": MessageLookupByLibrary.simpleMessage("Keluar"),
         "map": MessageLookupByLibrary.simpleMessage("Peta"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Pindahkan ke"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Komunitas saya"),
@@ -223,7 +218,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Jaringan"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Biaya Jaringan"),
         "next_button": MessageLookupByLibrary.simpleMessage("Lanjut"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Tidak"),
         "no_activity":
             MessageLookupByLibrary.simpleMessage("Tidak ada aktivitas"),
@@ -310,7 +304,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Mudah"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Lewati"),
         "slippage": MessageLookupByLibrary.simpleMessage("Kesenjangan"),
-        "smart": MessageLookupByLibrary.simpleMessage("Cerdas"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Kami memberi restoran lebih banyak dengan membebankan biaya yang adil kepada mereka"),
         "social": MessageLookupByLibrary.simpleMessage("Sosial"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Terjadi sesuatu"),
@@ -352,7 +347,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars dapat bebas dipindahkan antar akun di FuseCash, selain juga akun Fuse di luar FuseCash. Itu juga dapat ditukar dengan mata uang kripto lainnya langsung dari FuseCash menggunakan FuseSwap DEX, dan sebentar lagi akan dapat digunakan untuk memperoleh pemasukan pasif."),
         "use_max": MessageLookupByLibrary.simpleMessage("Gunakan maks"),
-        "useful": MessageLookupByLibrary.simpleMessage("Berguna"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Dapatkan Hadiah Untuk Setiap Pembelanjaan"),
         "version": MessageLookupByLibrary.simpleMessage("Versi aplikasi"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Kunjungi fuse.io untuk mempelajari lebih lanjut tentang Fuse dan cara kerjanya di balik layar."),
@@ -391,8 +387,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Saldo Anda"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("Anda tidak punya saldo"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Dompet Anda kosong!")
       };

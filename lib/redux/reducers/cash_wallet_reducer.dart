@@ -1,12 +1,12 @@
 import 'package:ethereum_address/ethereum_address.dart';
-import 'package:fusecash/models/actions/actions.dart';
-import 'package:fusecash/models/actions/wallet_action.dart';
-import 'package:fusecash/models/community/community.dart';
-import 'package:fusecash/models/tokens/token.dart';
-import 'package:fusecash/redux/actions/cash_wallet_actions.dart';
-import 'package:fusecash/redux/actions/user_actions.dart';
-import 'package:fusecash/models/cash_wallet_state.dart';
-import 'package:fusecash/redux/reducers/pro_mode_reducer.dart';
+import 'package:peepl/models/actions/actions.dart';
+import 'package:peepl/models/actions/wallet_action.dart';
+import 'package:peepl/models/community/community.dart';
+import 'package:peepl/models/tokens/token.dart';
+import 'package:peepl/redux/actions/cash_wallet_actions.dart';
+import 'package:peepl/redux/actions/user_actions.dart';
+import 'package:peepl/models/cash_wallet_state.dart';
+import 'package:peepl/redux/reducers/pro_mode_reducer.dart';
 import 'package:redux/redux.dart';
 
 final cashWalletReducers = combineReducers<CashWalletState>([
@@ -38,11 +38,6 @@ final cashWalletReducers = combineReducers<CashWalletState>([
   TypedReducer<CashWalletState, SwitchCommunityRequested>(
       _switchCommunityRequest),
   TypedReducer<CashWalletState, SwitchToNewCommunity>(_switchToNewCommunity),
-  TypedReducer<CashWalletState, BranchListening>(_branchListening),
-  TypedReducer<CashWalletState, BranchListeningStopped>(
-      _branchListeningStopped),
-  TypedReducer<CashWalletState, BranchCommunityToUpdate>(
-      _branchCommunityToUpdate),
   TypedReducer<CashWalletState, SetIsTransfersFetching>(
       _setIsTransfersFetching),
   TypedReducer<CashWalletState, CreateLocalAccountSuccess>(
@@ -235,7 +230,6 @@ CashWalletState _setDefaultCommunity(
     communityAddress: action.defaultCommunity,
     communities: newOne,
     walletActions: WalletActions.initial(),
-    isBranchDataReceived: false,
   );
 }
 
@@ -362,8 +356,6 @@ CashWalletState _switchCommunityRequest(
   return state.copyWith(
     isCommunityLoading: true,
     communityAddress: action.communityAddress.toLowerCase(),
-    branchAddress: "",
-    isBranchDataReceived: false,
   );
 }
 
@@ -377,29 +369,9 @@ CashWalletState _switchToNewCommunity(
       Map<String, Community>.from(state.communities);
   newOne[communityAddress] = newCommunity;
   return state.copyWith(
-    branchAddress: "",
     isCommunityLoading: true,
     communities: newOne,
-    isBranchDataReceived: false,
   );
-}
-
-CashWalletState _branchCommunityToUpdate(
-    CashWalletState state, BranchCommunityToUpdate action) {
-  return state.copyWith(
-    branchAddress: action.communityAddress,
-    isBranchDataReceived: true,
-  );
-}
-
-CashWalletState _branchListening(
-    CashWalletState state, BranchListening action) {
-  return state.copyWith(isListeningToBranch: true);
-}
-
-CashWalletState _branchListeningStopped(
-    CashWalletState state, BranchListeningStopped action) {
-  return state.copyWith(isListeningToBranch: false);
 }
 
 CashWalletState _setIsTransfersFetching(
@@ -413,9 +385,7 @@ CashWalletState _createNewWalletSuccess(
   CashWalletState state,
   CreateLocalAccountSuccess action,
 ) {
-  return CashWalletState(
-    isBranchDataReceived: state.isBranchDataReceived,
-  );
+  return CashWalletState.initial();
 }
 
 CashWalletState _setIsFetchingBalances(

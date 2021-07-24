@@ -60,7 +60,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancelar"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Escolha como prefere proteger sua carteira selecionando os métodos a seguir"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Fechar"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("Em breve"),
         "community": MessageLookupByLibrary.simpleMessage("comunidade"),
@@ -109,8 +108,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Depósito da Ethereum"),
         "deposit_from_ethereum_or_BSC":
             MessageLookupByLibrary.simpleMessage("Depósito da Ethereum ou BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Deposite seu"),
         "deposit_your_first_dollars": MessageLookupByLibrary.simpleMessage(
             "Deposite seus primeiros Dollars"),
@@ -182,11 +179,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Fundos insuficientes"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Pague e receba pagamentos usando crypto facilmente e sem taxas"),
+            "Apoie seus restaurantes locais, em uma plataforma que lhes dá uma parcela maior do que você paga"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Mantenha ativos Ethereum e acesse"),
+            "Recarregue sua carteira Peepl, tanto ou quanto quiser, diretamente de sua conta bancária usando Stripe. É rápido e seguro"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Use a carteira para enviar dinheiro para os amigos"),
+            "10% de volta em sua carteira, para gastar novamente no futuro"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("Número inválido"),
         "invalid_pincode":
@@ -220,8 +217,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Acessar"),
         "logout": MessageLookupByLibrary.simpleMessage("Desconectar"),
         "map": MessageLookupByLibrary.simpleMessage("Mapa"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Mover para"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Minhas comunidades"),
@@ -229,7 +224,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Rede"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Taxa da rede"),
         "next_button": MessageLookupByLibrary.simpleMessage("próximo"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Não"),
         "no_activity": MessageLookupByLibrary.simpleMessage("Sem atividade"),
         "no_businesses":
@@ -315,7 +309,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Simples"),
         "skip_button": MessageLookupByLibrary.simpleMessage("pular"),
         "slippage": MessageLookupByLibrary.simpleMessage("Slippage"),
-        "smart": MessageLookupByLibrary.simpleMessage("Inteligente"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Damos mais aos restaurantes cobrando taxas justas"),
         "social": MessageLookupByLibrary.simpleMessage("Social"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Ocorreu um erro"),
@@ -357,7 +352,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars podem ser movimentados livremente entre contas do FuseCash, bem como contas do Fuse fora do Fuse Cash. Elas também podem ser trocadas por outras criptomoedas do Fuse Cash usando o FuseSwap DEX, e em breve poderão ser usadas para o ganho de renda passiva."),
         "use_max": MessageLookupByLibrary.simpleMessage("Usar o máximo"),
-        "useful": MessageLookupByLibrary.simpleMessage("Útil"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Seja recompensado por cada gasto"),
         "version": MessageLookupByLibrary.simpleMessage("versão"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Visite o fuse.io para saber mais sobre o Fuse e como as coisas funcionam nos bastidores."),
@@ -398,8 +394,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Seu saldo"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("Você não tem saldo"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Sua carteira está vazia!")
       };

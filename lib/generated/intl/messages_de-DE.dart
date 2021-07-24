@@ -58,7 +58,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Abbrechen"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Wähle eine der folgenden Möglichkeiten aus, um deine Wallet zu schützen"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Schließen"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("Demnächst"),
         "community": MessageLookupByLibrary.simpleMessage("Community"),
@@ -106,8 +105,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Einzahlen mit Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Einzahlen von Ethereum oder BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Zahle deine"),
         "deposit_your_first_dollars": MessageLookupByLibrary.simpleMessage(
             "Zahle deine ersten Dollars ein"),
@@ -178,11 +175,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Unzureichende Mittel"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Bezahlen und werde bezahlt oder sende Geld an Freunde problemlos und ohne Gebühren"),
+            "Unterstützen Sie Ihre lokalen Restaurants auf einer Plattform, die ihnen einen größeren Anteil an dem gibt, was Sie bezahlen"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Erstelle eine sichere Wallet um am dezentralen Finanzwesen teilzunehmen"),
+            "Laden Sie Ihre Peepl-Wallet so viel oder so wenig auf, wie Sie möchten, direkt von Ihrem Bankkonto mit Stripe. Es ist schnell und sicher"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Zahle \$ ein und tausche in andere Währungen mit geringen bis keinen Gebühren"),
+            "10% zurück in Ihrem Portemonnaie, um es in Zukunft wieder auszugeben"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("Ungültige Nummer"),
         "invalid_pincode":
@@ -216,8 +213,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Anmelden"),
         "logout": MessageLookupByLibrary.simpleMessage("Abmelden"),
         "map": MessageLookupByLibrary.simpleMessage("Karte"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Verschieben"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Meine Communities"),
@@ -225,7 +220,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Netzwerk"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Netzwerkgebühr"),
         "next_button": MessageLookupByLibrary.simpleMessage("Weiter"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Nein"),
         "no_activity":
             MessageLookupByLibrary.simpleMessage("Keine Aktivitäten"),
@@ -249,8 +243,6 @@ class MessageLookup extends MessageLookupByLibrary {
             "FuseDollar ist vollständig durch den USD Coin (USDC) auf Fuse besichert. USDC wird von circle.com herausgegeben und ist ein vollständig durch den Dollar gedeckter und regulierter Stablecoin, der im Kryptowährungsbereich allgemein anerkannt ist."),
         "pending": MessageLookupByLibrary.simpleMessage("AUSSTEHEND"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Telefonnummer"),
-        "phrase_invaild": MessageLookupByLibrary.simpleMessage(
-            "One of the 12 words is invalid"),
         "pickup_display_name":
             MessageLookupByLibrary.simpleMessage("Wähle deinen Anzeigename"),
         "pickup_display_name_text": MessageLookupByLibrary.simpleMessage(
@@ -315,7 +307,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Einfach"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Überspringen"),
         "slippage": MessageLookupByLibrary.simpleMessage("Slippage"),
-        "smart": MessageLookupByLibrary.simpleMessage("Geschickt"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Wir geben Restaurants mehr, indem wir ihnen faire Gebühren berechnen"),
         "social": MessageLookupByLibrary.simpleMessage("Soziale Medien"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Etwas ist schief gelaufen"),
@@ -358,7 +351,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars können frei zwischen Konten auf FuseCash, sowie auf Fuse-Konten außerhalb von Fuse Cash bewegt und ebenso auch direkt auf Fuse Cash in andere Kryptowährungen über den FuseSwap DEX eingetauscht werden. Zudem wird es  bald möglich sein, diese für ein passives Einkommen zu nutzen."),
         "use_max": MessageLookupByLibrary.simpleMessage("Alles verwendend"),
-        "useful": MessageLookupByLibrary.simpleMessage("Nützlich"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Erhalten Sie eine Belohnung für jede Ausgabe"),
         "version": MessageLookupByLibrary.simpleMessage("App Version"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Besuche uns auf fuse.io, um mehr über Fuse zu erfahren und wie die Dinge hinter den Kulissen funktionieren."),
@@ -399,8 +393,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Dein Guthaben"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("Du hast kein Guthaben."),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Deine Wallet ist leer!")
       };

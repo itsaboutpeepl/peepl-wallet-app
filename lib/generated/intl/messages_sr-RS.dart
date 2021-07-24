@@ -59,7 +59,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Обустави"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Молимо изаберите како желите заштитити новчаник тако што ћете изабрати следеће методе"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("Coming soon"),
         "community": MessageLookupByLibrary.simpleMessage("заједници"),
@@ -106,8 +105,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Deposit from Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Deposit from Ethereum or BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Deposit your"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("Deposit your first Dollars"),
@@ -177,11 +174,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Недовољно средстава"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Користи новчаник за слање новца \n пријатељима без провизије и наплате"),
+            "Подржите своје локалне ресторане на платформи која им даје већи део онога што плаћате"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Чувај Ethereum сретства и приступи \n децентрализиваним финансијама у неколико корака"),
+            "Допуните свој Пеепл новчаник, колико год желите или мање, директно са свог банковног рачуна користећи Стрипе. Брзо је и сигурно"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Плаћајте и будите плаћени користећи крипто \n и видите где можете куповати у близини"),
+            "Вратићете 10% у новчаник да бисте га у будућности потрошили поново"),
         "invalid_number": MessageLookupByLibrary.simpleMessage("Погрешан број"),
         "invalid_pincode":
             MessageLookupByLibrary.simpleMessage("Invalid pincode"),
@@ -213,8 +210,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Пријава"),
         "logout": MessageLookupByLibrary.simpleMessage("Одјава"),
         "map": MessageLookupByLibrary.simpleMessage("Мапа"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Премести"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Моја заједница"),
@@ -222,7 +217,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Мрежа"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Network Fee"),
         "next_button": MessageLookupByLibrary.simpleMessage("Следеће"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Не"),
         "no_activity": MessageLookupByLibrary.simpleMessage("Нема активности"),
         "no_businesses":
@@ -307,7 +301,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Једноставно"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Прескочи"),
         "slippage": MessageLookupByLibrary.simpleMessage("Slippage"),
-        "smart": MessageLookupByLibrary.simpleMessage("Паметно"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Дајемо ресторанима више наплаћујући им поштене таксе"),
         "social": MessageLookupByLibrary.simpleMessage("Social"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Нешто није у реду"),
@@ -350,7 +345,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars can be freely moved between accounts on FuseCash, as well as to Fuse accounts outside Fuse Cash. They can also be swapped for other cryptocurrencies straight from Fuse Cash using the FuseSwap DEX, and will soon be usable for earning passive income."),
         "use_max": MessageLookupByLibrary.simpleMessage("Користи максимално"),
-        "useful": MessageLookupByLibrary.simpleMessage("Корисно"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Награђујте за сваку потрошњу"),
         "version": MessageLookupByLibrary.simpleMessage("Верзија"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Visit fuse.io to learn more about Fuse and how things work behind the scenes."),
@@ -390,8 +386,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Your balance"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("You have no balance"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Your wallet is empty!")
       };

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
-import 'package:fusecash/models/actions/actions.dart';
-import 'package:fusecash/models/cash_wallet_state.dart';
-import 'package:fusecash/models/tokens/price.dart';
-import 'package:fusecash/models/tokens/stats.dart';
-import 'package:fusecash/services.dart';
-import 'package:fusecash/utils/format.dart';
+import 'package:peepl/models/actions/actions.dart';
+import 'package:peepl/models/cash_wallet_state.dart';
+import 'package:peepl/models/tokens/price.dart';
+import 'package:peepl/models/tokens/stats.dart';
+import 'package:peepl/services.dart';
+import 'package:peepl/utils/format.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:wallet_core/wallet_core.dart' show EtherAmount, Web3;
 

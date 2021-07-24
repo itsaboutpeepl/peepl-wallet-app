@@ -300,16 +300,6 @@ class I10n {
     );
   }
 
-  /// `Claim`
-  String get claim {
-    return Intl.message(
-      'Claim',
-      name: 'claim',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Close`
   String get close {
     return Intl.message(
@@ -585,16 +575,6 @@ class I10n {
     return Intl.message(
       'Deposit from Ethereum or BSC',
       name: 'deposit_from_ethereum_or_BSC',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Deposit Fuse Dollar`
-  String get deposit_fuse_dollar {
-    return Intl.message(
-      'Deposit Fuse Dollar',
-      name: 'deposit_fuse_dollar',
       desc: '',
       args: [],
     );
@@ -1060,30 +1040,30 @@ class I10n {
     );
   }
 
-  /// `Pay and get paid or send money to friends without fees or friction`
+  /// `Support your local restaurants, on a platform that gives them a bigger share of what you pay`
   String get intro_text_one {
     return Intl.message(
-      'Pay and get paid or send money to friends without fees or friction',
+      'Support your local restaurants, on a platform that gives them a bigger share of what you pay',
       name: 'intro_text_one',
       desc: '',
       args: [],
     );
   }
 
-  /// `Create a secure and smart token account to access decentralized finance`
+  /// `Top up your Peepl wallet, as much or as little as you like, directly from your bank account using Stripe. It’s fast & secure`
   String get intro_text_three {
     return Intl.message(
-      'Create a secure and smart token account to access decentralized finance',
+      'Top up your Peepl wallet, as much or as little as you like, directly from your bank account using Stripe. It’s fast & secure',
       name: 'intro_text_three',
       desc: '',
       args: [],
     );
   }
 
-  /// `Deposit \b$ and swap to other currencies with little to no fees`
+  /// `10% back in your wallet, to spend again in future`
   String get intro_text_two {
     return Intl.message(
-      'Deposit \b\$ and swap to other currencies with little to no fees',
+      '10% back in your wallet, to spend again in future',
       name: 'intro_text_two',
       desc: '',
       args: [],
@@ -1300,16 +1280,6 @@ class I10n {
     );
   }
 
-  /// `Minminal amount to claim - $0.01`
-  String get min_to_claim {
-    return Intl.message(
-      'Minminal amount to claim - \$0.01',
-      name: 'min_to_claim',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Move to`
   String get move_to {
     return Intl.message(
@@ -1365,16 +1335,6 @@ class I10n {
     return Intl.message(
       'Next',
       name: 'next_button',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Next claim in`
-  String get next_claim {
-    return Intl.message(
-      'Next claim in',
-      name: 'next_claim',
       desc: '',
       args: [],
     );
@@ -1990,10 +1950,10 @@ class I10n {
     );
   }
 
-  /// `Smart`
+  /// `We give restaurants more by charging them fair fees`
   String get smart {
     return Intl.message(
-      'Smart',
+      'We give restaurants more by charging them fair fees',
       name: 'smart',
       desc: '',
       args: [],
@@ -2270,10 +2230,10 @@ class I10n {
     );
   }
 
-  /// `Useful`
+  /// `Get Rewarded For Each Spend`
   String get useful {
     return Intl.message(
-      'Useful',
+      'Get Rewarded For Each Spend',
       name: 'useful',
       desc: '',
       args: [],
@@ -2530,16 +2490,6 @@ class I10n {
     );
   }
 
-  /// `Your projected balance`
-  String get your_projected_balance {
-    return Intl.message(
-      'Your projected balance',
-      name: 'your_projected_balance',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Your wallet is empty!`
   String get your_wallet_is_empty {
     return Intl.message(
@@ -2562,6 +2512,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<I10n> {
       Locale.fromSubtags(languageCode: 'es', countryCode: 'ES'),
       Locale.fromSubtags(languageCode: 'es', countryCode: 'MX'),
       Locale.fromSubtags(languageCode: 'fr', countryCode: 'FR'),
+      Locale.fromSubtags(languageCode: 'he', countryCode: 'IL'),
       Locale.fromSubtags(languageCode: 'id', countryCode: 'ID'),
       Locale.fromSubtags(languageCode: 'it', countryCode: 'IT'),
       Locale.fromSubtags(languageCode: 'ko'),

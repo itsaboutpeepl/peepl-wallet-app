@@ -58,7 +58,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("ยกเลิก"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "โปรดเลือกวิธีการดังต่อไปนี้ที่คุณต้องการใช้ในการปกป้องกระเป๋าเงินของคุณ"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("ปิด"),
         "coming_soon":
             MessageLookupByLibrary.simpleMessage("จะมีให้บริการในเร็ว ๆ นี้!"),
@@ -105,8 +104,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ฝากจากอีเธอร์เรียม"),
         "deposit_from_ethereum_or_BSC":
             MessageLookupByLibrary.simpleMessage("ฝากจากอีเธอร์เรียม หรือ BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("ฝากเงินของคุณ"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("ฝากเงินดอลลาร์แรกของคุณ"),
@@ -176,11 +173,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "กำลังเริ่มต้นกระเป๋าเงินของคุณบน Fuse"),
         "insufficient_fund": MessageLookupByLibrary.simpleMessage("เงินไม่พอ"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "จ่ายและรับเงินหรือส่งเงินให้เพื่อนโดยไม่มีค่าธรรมเนียมหรือความขัดแย้ง"),
+            "สนับสนุนร้านอาหารในพื้นที่ของคุณบนแพลตฟอร์มที่ให้ส่วนแบ่งในสิ่งที่คุณจ่ายมากขึ้น"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "สร้างบัญชีโทเค็นที่ปลอดภัยและชาญฉลาดเพื่อเข้าถึงการเงินแบบกระจายศูนย์"),
+            "เติมเงินในกระเป๋าเงิน Peepl ของคุณ มากหรือน้อยตามที่คุณต้องการ โดยตรงจากบัญชีธนาคารของคุณโดยใช้ Stripe รวดเร็วและปลอดภัย"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "ฝากเงิน \$ แล้วแลกเปลี่ยนเป็นสกุลเงินอื่นโดยมีค่าธรรมเนียมเพียงเล็กน้อยหรือไม่มีค่าธรรมเนียม"),
+            "กลับเข้ากระเป๋า 10% เพื่อใช้จ่ายอีกในอนาคต"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("ตัวเลขไม่ถูกต้อง"),
         "invalid_pincode":
@@ -211,8 +208,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("เข้าสู่ระบบ"),
         "logout": MessageLookupByLibrary.simpleMessage("ออกจากระบบ"),
         "map": MessageLookupByLibrary.simpleMessage("แผนที่"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("ย้ายไปยัง"),
         "my_communities": MessageLookupByLibrary.simpleMessage("ชุมชนของฉัน"),
         "name": MessageLookupByLibrary.simpleMessage("ชื่อ"),
@@ -220,7 +215,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network_fee":
             MessageLookupByLibrary.simpleMessage("ค่าธรรมเนียมเครือข่าย"),
         "next_button": MessageLookupByLibrary.simpleMessage("ถัดไป"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("ไม่ใช่"),
         "no_activity": MessageLookupByLibrary.simpleMessage("ไม่มีกิจกรรม"),
         "no_businesses": MessageLookupByLibrary.simpleMessage("ไม่พบธุรกิจ"),
@@ -305,7 +299,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("เรียบง่าย"),
         "skip_button": MessageLookupByLibrary.simpleMessage("ข้าม"),
         "slippage": MessageLookupByLibrary.simpleMessage("เลื่อนไหล"),
-        "smart": MessageLookupByLibrary.simpleMessage("ฉลาด"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "เราให้ร้านอาหารมากขึ้นด้วยการเรียกเก็บค่าธรรมเนียมที่ยุติธรรม"),
         "social": MessageLookupByLibrary.simpleMessage("โซเชียล"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("เกิดข้อผิดพลาดขึ้น"),
@@ -347,7 +342,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars สามารถย้ายได้อย่างอิสระระหว่างบัญชีใน FuseCash เช่นเดียวกับย้ายไปยังบัญชี Fuse นอก Fuse Cash ทั้งยังสามารถแลกเปลี่ยนเป็นคริปโตเคอร์เรนซีอื่น ๆ ได้โดยตรงจาก Fuse Cash โดยใช้ FuseSwap DEX และจะสามารถใช้สร้างรายได้แบบพาสซีฟได้ในไม่ช้า"),
         "use_max": MessageLookupByLibrary.simpleMessage("ใช้สูงสุด"),
-        "useful": MessageLookupByLibrary.simpleMessage("มีประโยชน์"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "รับรางวัลสำหรับการใช้จ่ายแต่ละครั้ง"),
         "version": MessageLookupByLibrary.simpleMessage("แอปเวอร์ชัน"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "เข้าไปที่ fuse.io เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับ Fuse และวิธีการทำงานเบื้องหลัง"),
@@ -387,8 +383,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ยอดคงเหลือของคุณ"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("คุณไม่มียอดเงินคงเหลือ"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("กระเป๋าเงินของคุณว่างเปล่า!")
       };

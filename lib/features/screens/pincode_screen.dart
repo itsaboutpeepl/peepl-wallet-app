@@ -1,12 +1,12 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flushbar/flushbar.dart';
+import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_segment/flutter_segment.dart';
-import 'package:fusecash/generated/l10n.dart';
-import 'package:fusecash/models/app_state.dart';
-import 'package:fusecash/redux/viewsmodels/backup.dart';
-import 'package:fusecash/common/router/routes.dart';
+import 'package:peepl/generated/l10n.dart';
+import 'package:peepl/models/app_state.dart';
+import 'package:peepl/redux/viewsmodels/backup.dart';
+import 'package:peepl/common/router/routes.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class PinCodeScreen extends StatefulWidget {
@@ -40,9 +40,8 @@ class _PinCodeScreenState extends State<PinCodeScreen> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFFB1FDC0),
-              Color(0xFFE6FD99),
-              Color(0xFFFEFD86),
+              Theme.of(context).colorScheme.primaryVariant,
+              Theme.of(context).colorScheme.primary,
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -68,7 +67,7 @@ class _PinCodeScreenState extends State<PinCodeScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Image.asset(
-                          'assets/images/pincode_logo.png',
+                          'assets/images/splash.png',
                           width: 71,
                           height: 61,
                         ),
@@ -86,7 +85,7 @@ class _PinCodeScreenState extends State<PinCodeScreen> {
                           I10n.of(context).enter_pincode,
                           style: TextStyle(
                             fontSize: 25,
-                            color: Color(0xFF575757),
+                            color: Colors.white,
                           ),
                         ),
                         SizedBox(
@@ -121,7 +120,7 @@ class _PinCodeScreenState extends State<PinCodeScreen> {
                                         : null,
                                 textStyle: TextStyle(
                                   fontSize: 30,
-                                  color: Color(0xFF575757),
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                                 pinTheme: PinTheme(
@@ -129,9 +128,9 @@ class _PinCodeScreenState extends State<PinCodeScreen> {
                                   borderWidth: 4,
                                   fieldWidth: 35,
                                   shape: PinCodeFieldShape.underline,
-                                  inactiveColor: Color(0xFF575757),
-                                  selectedColor: Color(0xFF575757),
-                                  activeColor: Color(0xFF575757),
+                                  inactiveColor: Colors.white,
+                                  selectedColor: Colors.white,
+                                  activeColor: Colors.white,
                                   inactiveFillColor: Colors.transparent,
                                   selectedFillColor: Colors.transparent,
                                   disabledColor: Colors.transparent,

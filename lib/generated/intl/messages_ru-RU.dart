@@ -60,7 +60,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Отмена"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Пожалуйста, выберите, как вы предпочитаете защитить свой кошелек, выбрав следующие методы"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "coming_soon":
             MessageLookupByLibrary.simpleMessage("Скоро станет доступным\n"),
@@ -108,8 +107,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Пополнить счет с Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Пополнить счет через Ethereum или BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Внесите свой"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("Внесите свои первые доллары"),
@@ -180,11 +177,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Недостаточно средств"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Платите и получайте средства, или отправляйте их друзьям без комиссий и лишних хлопот"),
+            "Поддерживайте местные рестораны на платформе, которая дает им большую долю от того, что вы платите."),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Создайте безопасную учетную запись для смарт токена чтобы получить доступ к децентрализованным финансам"),
+            "Пополняйте свой кошелек Peepl, сколько хотите, прямо со своего банковского счета с помощью Stripe. Это быстро и безопасно"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Внесите \$ и обменивайте его на другие валюты практически без комиссии"),
+            "10% обратно в кошелек, чтобы потратить снова в будущем"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("Неправильный номер"),
         "invalid_pincode":
@@ -217,8 +214,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Авторизоваться"),
         "logout": MessageLookupByLibrary.simpleMessage("Выйти"),
         "map": MessageLookupByLibrary.simpleMessage("Карта"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Перейти к"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Мои сообщества"),
@@ -226,7 +221,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Сеть"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Комиссия сети\n"),
         "next_button": MessageLookupByLibrary.simpleMessage("Следующий"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Нет"),
         "no_activity": MessageLookupByLibrary.simpleMessage("Нет активности"),
         "no_businesses":
@@ -314,7 +308,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Простой"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Пропустить"),
         "slippage": MessageLookupByLibrary.simpleMessage("Соскальзывание"),
-        "smart": MessageLookupByLibrary.simpleMessage("Умный"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Мы даем ресторанам больше, взимая с них справедливую плату"),
         "social": MessageLookupByLibrary.simpleMessage("Социальное"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Что-то пошло не так"),
@@ -355,7 +350,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "Fuse Доллары можно свободно перемещать между счетами на Fuse Cash, а также на счета Fuse вне Fuse Cash кошелька. Их также можно обменять на другие криптовалюты прямо в кошельке Fuse Cash с помощью FuseSwap DEX, и вскоре их можно будет использовать для получения пассивного дохода."),
         "use_max": MessageLookupByLibrary.simpleMessage("Используйте макс."),
-        "useful": MessageLookupByLibrary.simpleMessage("Полезный"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Получайте вознаграждение за каждую трату"),
         "version": MessageLookupByLibrary.simpleMessage("Версия приложения"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Посетите fuse.io, чтобы узнать больше о Fuse и о том, как все работает за кулисами."),
@@ -396,8 +392,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Ваш баланс"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("Нужно пополнить баланс"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Ваш кошелек пуст!")
       };

@@ -3,15 +3,14 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fusecash/common/router/routes.dart';
-import 'package:fusecash/common/router/routes.gr.dart';
-import 'package:fusecash/features/account/widgets/avatar.dart';
-import 'package:fusecash/features/account/widgets/menu_tile.dart';
-import 'package:fusecash/generated/l10n.dart';
-import 'package:fusecash/models/app_state.dart';
-import 'package:fusecash/redux/viewsmodels/account.dart';
-import 'package:fusecash/utils/webview.dart';
-import 'package:fusecash/features/shared/widgets/my_scaffold.dart';
+import 'package:peepl/common/router/routes.dart';
+import 'package:peepl/common/router/routes.gr.dart';
+import 'package:peepl/features/account/widgets/avatar.dart';
+import 'package:peepl/features/account/widgets/menu_tile.dart';
+import 'package:peepl/generated/l10n.dart';
+import 'package:peepl/models/app_state.dart';
+import 'package:peepl/redux/viewsmodels/account.dart';
+import 'package:peepl/features/shared/widgets/my_scaffold.dart';
 
 class AccountScreen extends StatefulWidget {
   @override
@@ -27,7 +26,6 @@ class _AccountScreenState extends State<AccountScreen> {
         distinct: true,
         converter: AccountViewModel.fromStore,
         builder: (_, viewModel) {
-          List depositPlugins = viewModel.plugins.getDepositPlugins();
           return Container(
             padding: EdgeInsets.only(
               left: 20,
@@ -52,13 +50,6 @@ class _AccountScreenState extends State<AccountScreen> {
                               menuIcon: 'settings_icon.svg',
                               onTap: () {
                                 context.router.push(SettingsScreen());
-                              },
-                            ),
-                            MenuTile(
-                              label: I10n.of(context).switch_community,
-                              menuIcon: 'switch_icon.svg',
-                              onTap: () {
-                                context.router.push(SwitchCommunityScreen());
                               },
                             ),
                             MenuTile(
@@ -96,28 +87,15 @@ class _AccountScreenState extends State<AccountScreen> {
                                 ],
                               ),
                             ),
-                            depositPlugins.isNotEmpty
-                                ? MenuTile(
-                                    label: '${I10n.of(context).top_up} \$',
-                                    menuIcon: 'top_up_icon.svg',
-                                    onTap: () {
-                                      String url = depositPlugins[0].widgetUrl;
-                                      if (viewModel.isFuseDollarCommunity) {
-                                        openDepositWebview(
-                                          context: context,
-                                          url: url,
-                                        );
-                                      } else {
-                                        context.router.push(
-                                          Webview(
-                                            url: url,
-                                            title: I10n.of(context).top_up,
-                                          ),
-                                        );
-                                      }
-                                    },
-                                  )
-                                : SizedBox.shrink(),
+                            MenuTile(
+                              label: '${I10n.of(context).top_up} \$',
+                              menuIcon: 'top_up_icon.svg',
+                              onTap: () {
+                                context.router.root.push(
+                                  TopupScreen(),
+                                );
+                              },
+                            ),
                             MenuTile(
                               label: I10n.of(context).legal,
                               menuIcon: 'legal_icon.svg',

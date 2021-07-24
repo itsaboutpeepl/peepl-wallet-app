@@ -59,7 +59,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancelar"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Por favor, elija cómo prefiere proteger su billetera seleccionando los siguientes métodos"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Cerrar"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("Próximamente"),
         "community": MessageLookupByLibrary.simpleMessage("comunidad"),
@@ -90,7 +89,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "crypto_deposit_bsc": MessageLookupByLibrary.simpleMessage(
             "Si tiene USDC en Ethereum o BSC, use esta URL con su navegador habilitado para billeteras para usar el puente a Fuse:"),
         "crypto_deposit_eth": MessageLookupByLibrary.simpleMessage(
-            "Si tienes USDC en Ethereum, usa el URL que se encuentra a continuación con tu cuenta Metamask, usando un navegador en tu computadora para depositar en Fuse:"),
+            "If you have USDC on Ethereum please use the URL below with your Metamask account on a desktop browser to deposit to Fuse:"),
         "crypto_deposit_risk": MessageLookupByLibrary.simpleMessage(
             "Tenga en cuenta que este es un enlace personal que enviará por el puente los fondos directamente a su cuenta."),
         "crypto_deposit_risk_2": MessageLookupByLibrary.simpleMessage(
@@ -107,8 +106,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Depósito desde Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Depósito desde Ethereum o BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Deposita tus"),
         "deposit_your_first_dollars": MessageLookupByLibrary.simpleMessage(
             "Deposita tus primeros dólares"),
@@ -118,7 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dont_show_next_time":
             MessageLookupByLibrary.simpleMessage("Don\'t show next time"),
         "dont_worry": MessageLookupByLibrary.simpleMessage("No te preocupes:"),
-        "earn": MessageLookupByLibrary.simpleMessage("Gana"),
+        "earn": MessageLookupByLibrary.simpleMessage("Ganancias"),
         "earn_description": MessageLookupByLibrary.simpleMessage(
             "Los que posean Fuse Dollars son elegibles para obtener un rendimiento del 5% anual con sólo mantener esos dólares en su saldo."),
         "edit": MessageLookupByLibrary.simpleMessage("Editar"),
@@ -181,11 +178,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Fondos insuficientes"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Paga y recibe pagos o envía dinero a tus amigos sin comisiones ni fricciones"),
+            "Apoye a sus restaurantes locales, en una plataforma que les brinda una mayor proporción de lo que paga"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Crea una cuenta de monedas segura e inteligente para acceder a las finanzas descentralizadas"),
+            "Recargue su billetera Peepl, tanto o tan poco como desee, directamente desde su cuenta bancaria usando Stripe. Es rápido y seguro"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Deposita \b\$ y cambia a otras monedas con comisiones bajas o nulas"),
+            "10% de regreso en su billetera, para gastar nuevamente en el futuro"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("Número inválido"),
         "invalid_pincode":
@@ -212,15 +209,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "legal": MessageLookupByLibrary.simpleMessage("Legal"),
         "lets_start":
             MessageLookupByLibrary.simpleMessage("¡Eso es! Empecemos"),
-        "limit_discalimer": MessageLookupByLibrary.simpleMessage(
-            "(para depósitos superiores a 200\$)"),
+        "limit_discalimer":
+            MessageLookupByLibrary.simpleMessage("(for deposits above 200\$)"),
         "limit_offer": MessageLookupByLibrary.simpleMessage(
-            "Oferta por tiempo limitado! Bono de 50\$ de depósito 💸"),
+            "Limited time offer! 50 \$ deposit bonus 💸"),
         "login": MessageLookupByLibrary.simpleMessage("Iniciar sesión"),
         "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión"),
         "map": MessageLookupByLibrary.simpleMessage("Mapa"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Mover a"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Mis comunidades"),
@@ -229,7 +224,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network_fee":
             MessageLookupByLibrary.simpleMessage("Comisión de la red"),
         "next_button": MessageLookupByLibrary.simpleMessage("Siguiente"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("No"),
         "no_activity": MessageLookupByLibrary.simpleMessage("No hay actividad"),
         "no_businesses":
@@ -318,7 +312,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Simple"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Omitir"),
         "slippage": MessageLookupByLibrary.simpleMessage("Deslizamiento"),
-        "smart": MessageLookupByLibrary.simpleMessage("Inteligente"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "Damos más a los restaurantes cobrándoles tarifas justas"),
         "social": MessageLookupByLibrary.simpleMessage("Social"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Algo salió mal"),
@@ -360,7 +355,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "Los FuseDollars se pueden mover libremente entre cuentas en Fuse Cash, así como a cuentas de Fuse fuera de Fuse Cash. También se pueden intercambiar por otras criptomonedas directamente desde Fuse Cash utilizando FuseSwap DEX, y pronto se podrán utilizar para obtener ingresos pasivos."),
         "use_max": MessageLookupByLibrary.simpleMessage("Usar máx"),
-        "useful": MessageLookupByLibrary.simpleMessage("Útil"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Obtenga recompensas por cada gasto"),
         "version": MessageLookupByLibrary.simpleMessage("Versión"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Visita fuse.io para obtener más información sobre Fuse y cómo funcionan las cosas detrás de escena."),
@@ -401,8 +397,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Tu saldo"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("No tienes saldo"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("¡Tu billetera está vacía!")
       };

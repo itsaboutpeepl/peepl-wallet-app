@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'dart:core';
 import 'package:flutter/services.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:fusecash/features/shared/widgets/snackbars.dart';
-import 'package:fusecash/generated/l10n.dart';
-import 'package:fusecash/models/app_state.dart';
-import 'package:fusecash/redux/viewsmodels/recovery.dart';
-import 'package:fusecash/common/router/routes.dart';
-import 'package:fusecash/features/shared/widgets/my_scaffold.dart';
-import 'package:fusecash/features/shared/widgets/primary_button.dart';
+import 'package:peepl/features/shared/widgets/snackbars.dart';
+import 'package:peepl/generated/l10n.dart';
+import 'package:peepl/models/app_state.dart';
+import 'package:peepl/redux/viewsmodels/recovery.dart';
+import 'package:peepl/common/router/routes.dart';
+import 'package:peepl/features/shared/widgets/my_scaffold.dart';
+import 'package:peepl/features/shared/widgets/primary_button.dart';
 
 class RestoreFromBackupScreen extends StatefulWidget {
   @override

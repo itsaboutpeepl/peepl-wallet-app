@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fusecash/models/tokens/price.dart';
-import 'package:fusecash/services.dart';
-import 'package:fusecash/utils/format.dart';
+import 'package:peepl/models/tokens/price.dart';
+import 'package:peepl/services.dart';
+import 'package:peepl/utils/format.dart';
 import 'package:number_display/number_display.dart';
 
 final Display display2 = createDisplay(

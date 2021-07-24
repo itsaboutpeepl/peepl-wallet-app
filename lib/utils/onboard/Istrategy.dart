@@ -1,7 +1,7 @@
-import 'package:fusecash/constants/enums.dart';
-import 'package:fusecash/utils/onboard/firebase.dart';
-import 'package:fusecash/utils/onboard/simple.dart';
-import 'package:fusecash/utils/onboard/sms.dart';
+import 'package:peepl/constants/enums.dart';
+import 'package:peepl/utils/onboard/firebase.dart';
+import 'package:peepl/utils/onboard/simple.dart';
+import 'package:peepl/utils/onboard/sms.dart';
 
 abstract class IOnBoardStrategy {
   final OnboardStrategy strategy;

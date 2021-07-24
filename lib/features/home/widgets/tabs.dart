@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fusecash/features/home/widgets/feed.dart';
-import 'package:fusecash/features/home/widgets/wallet.dart';
-import 'package:fusecash/generated/l10n.dart';
+import 'package:peepl/features/home/widgets/feed.dart';
+import 'package:peepl/features/home/widgets/wallet.dart';
+import 'package:peepl/generated/l10n.dart';
 
 class Tabs extends StatelessWidget {
   final int initialIndex;
@@ -33,6 +33,7 @@ class Tabs extends StatelessWidget {
                       fontFamily: 'Europa',
                       fontSize: 17,
                     ),
+                    labelColor: Colors.black,
                     unselectedLabelColor: Color(0xFFA2A2A2),
                     labelStyle: TextStyle(
                       fontFamily: 'Europa',

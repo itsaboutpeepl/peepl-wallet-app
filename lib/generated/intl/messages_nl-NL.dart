@@ -58,7 +58,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Annuleer"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "Kies hoe je je wallet wilt beschermen door een van de volgende methoden te selecteren"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("Sluiten"),
         "coming_soon":
             MessageLookupByLibrary.simpleMessage("Binnenkort beschikbaar"),
@@ -106,8 +105,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Stort vanuit Ethereum"),
         "deposit_from_ethereum_or_BSC": MessageLookupByLibrary.simpleMessage(
             "Stort vanuit Ethereum of BSC"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("Stort je"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("Stort je eerste dollars"),
@@ -179,11 +176,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "insufficient_fund":
             MessageLookupByLibrary.simpleMessage("Onvoldoende saldo"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "Gebruik de wallet om geld te sturen \n naar vrienden zonder fees en beperkingen"),
+            "Steun uw lokale restaurants, op een platform dat hen een groter deel geeft van wat u betaalt"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "Houd Ethereum bezittingen vast en krijg met een paar tikken \n toegang tot gedecentraliseerde financiering"),
+            "Waardeer je Peepl-portemonnee zo veel of zo weinig als je wilt, rechtstreeks vanaf je bankrekening met Stripe. Het is snel en veilig"),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "Betalen en betaald worden in crypto \n en kijk waar je in de buurt kunt winkelen"),
+            "10% terug in uw portemonnee, om in de toekomst opnieuw te besteden"),
         "invalid_number":
             MessageLookupByLibrary.simpleMessage("Ongeldig nummer\n"),
         "invalid_pincode":
@@ -216,8 +213,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "map": MessageLookupByLibrary.simpleMessage("Мапа"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("Verplaatsen naar"),
         "my_communities":
             MessageLookupByLibrary.simpleMessage("Mijn communities"),
@@ -225,7 +220,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "network": MessageLookupByLibrary.simpleMessage("Netwerk"),
         "network_fee": MessageLookupByLibrary.simpleMessage("Netwerkkosten"),
         "next_button": MessageLookupByLibrary.simpleMessage("Volgende"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("Nee"),
         "no_activity": MessageLookupByLibrary.simpleMessage("Geen activiteit"),
         "no_businesses":
@@ -316,7 +310,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("Simpel"),
         "skip_button": MessageLookupByLibrary.simpleMessage("Overslaan"),
         "slippage": MessageLookupByLibrary.simpleMessage("Prijsfluctuatie"),
-        "smart": MessageLookupByLibrary.simpleMessage("slim"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "We geven restaurants meer door ze eerlijke prijzen te vragen"),
         "social": MessageLookupByLibrary.simpleMessage("Social"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("Er is iets fout gegaan"),
@@ -361,7 +356,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars kunnen vrij worden verplaatst tussen accounts op FuseCash, evenals naar Fuse-accounts buiten FuseCash. Ze kunnen ook rechtstreeks vanuit FuseCash worden geruild voor andere cryptocurrencies met behulp van de FuseSwap DEX, en zullen binnenkort bruikbaar zijn voor het verdienen van een passief inkomen."),
         "use_max": MessageLookupByLibrary.simpleMessage("Gebruik alles"),
-        "useful": MessageLookupByLibrary.simpleMessage("Nuttig"),
+        "useful": MessageLookupByLibrary.simpleMessage(
+            "Ontvang een beloning voor elke uitgave"),
         "version": MessageLookupByLibrary.simpleMessage("Versie"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "Bezoek fuse.io voor meer informatie over Fuse en om te leren hoe dingen achter de schermen werken."),
@@ -400,8 +396,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("Je saldo"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("Je hebt geen saldo "),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("Je wallet is leeg!")
       };

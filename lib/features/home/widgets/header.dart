@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fusecash/features/home/widgets/balance.dart';
-import 'package:fusecash/features/shared/widgets/barcode_scanner.dart';
-import 'package:fusecash/generated/l10n.dart';
-import 'package:fusecash/redux/viewsmodels/header.dart';
-import 'package:fusecash/models/app_state.dart';
+import 'package:peepl/features/home/widgets/balance.dart';
+// import 'package:peepl/features/shared/widgets/barcode_scanner.dart';
+import 'package:peepl/generated/l10n.dart';
+import 'package:peepl/redux/viewsmodels/header.dart';
+import 'package:peepl/models/app_state.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 
 class Header extends StatefulWidget {
@@ -42,6 +42,7 @@ class _HeaderState extends State<Header> {
                 child: Text(
                   '${I10n.of(context).hi} ${viewModel.firstName()}',
                   style: TextStyle(
+                    color: Theme.of(context).canvasColor,
                     fontSize: 22,
                   ),
                 ),
@@ -51,14 +52,16 @@ class _HeaderState extends State<Header> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    Balance(),
-                    BarcodeScanner(
-                      child: Image.asset(
-                        'assets/images/scan.png',
-                        width: 25.0,
-                        color: Theme.of(context).scaffoldBackgroundColor,
-                      ),
-                    ),
+                    Flexible(
+                      child: Balance(),
+                    )
+                    // BarcodeScanner(
+                    //   child: Image.asset(
+                    //     'assets/images/scan.png',
+                    //     width: 25.0,
+                    //     color: Theme.of(context).scaffoldBackgroundColor,
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

@@ -56,7 +56,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("취소"),
         "choose_lock_method": MessageLookupByLibrary.simpleMessage(
             "다음 방식 중에서 골라 어떻게 지갑을 보호할지 선택하세요"),
-        "claim": MessageLookupByLibrary.simpleMessage("Claim"),
         "close": MessageLookupByLibrary.simpleMessage("닫기"),
         "coming_soon": MessageLookupByLibrary.simpleMessage("곧 이용 가능"),
         "community": MessageLookupByLibrary.simpleMessage("커뮤니티"),
@@ -95,8 +94,6 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Ethereum에서 예치"),
         "deposit_from_ethereum_or_BSC":
             MessageLookupByLibrary.simpleMessage("Ethereum 또는 BSC에서 예치"),
-        "deposit_fuse_dollar":
-            MessageLookupByLibrary.simpleMessage("Deposit Fuse Dollar"),
         "deposit_your": MessageLookupByLibrary.simpleMessage("예치할 나의"),
         "deposit_your_first_dollars":
             MessageLookupByLibrary.simpleMessage("나의 첫 Dollars를 예치하세요"),
@@ -164,11 +161,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("나의 Fuse 지갑 초기화 중"),
         "insufficient_fund": MessageLookupByLibrary.simpleMessage("자금 불충분"),
         "intro_text_one": MessageLookupByLibrary.simpleMessage(
-            "수수료나 프릭션 없이 친구에게 돈을 전송하거나 결제를 하고 결제를 받으세요"),
+            "지불하는 금액의 더 큰 몫을 제공하는 플랫폼에서 현지 레스토랑을 지원하십시오"),
         "intro_text_three": MessageLookupByLibrary.simpleMessage(
-            "안전하고 스마트한 토큰 계정을 생성해 디파이에 액세스하세요"),
+            "Stripe를 사용하여 은행 계좌에서 직접 원하는만큼 Peepl 지갑을 충전하세요. 빠르고 안전합니다."),
         "intro_text_two": MessageLookupByLibrary.simpleMessage(
-            "달러를 예치하고 거의 없다시피 한 수수료로 다른 통화로 전환하세요"),
+            "10 %는 지갑에 다시 넣어두고 나중에 다시 사용할 수 있습니다."),
         "invalid_number": MessageLookupByLibrary.simpleMessage("유효하지 않은 번호"),
         "invalid_pincode":
             MessageLookupByLibrary.simpleMessage("유효하지 않은 PIN 코드"),
@@ -196,15 +193,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("로그인"),
         "logout": MessageLookupByLibrary.simpleMessage("로그아웃"),
         "map": MessageLookupByLibrary.simpleMessage("지도"),
-        "min_to_claim": MessageLookupByLibrary.simpleMessage(
-            "Minminal amount to claim - \$0.01"),
         "move_to": MessageLookupByLibrary.simpleMessage("이동할 곳:"),
         "my_communities": MessageLookupByLibrary.simpleMessage("나의 커뮤니티"),
         "name": MessageLookupByLibrary.simpleMessage("이름"),
         "network": MessageLookupByLibrary.simpleMessage("네트워크"),
         "network_fee": MessageLookupByLibrary.simpleMessage("네트워크 수수료"),
         "next_button": MessageLookupByLibrary.simpleMessage("다음"),
-        "next_claim": MessageLookupByLibrary.simpleMessage("Next claim in"),
         "no": MessageLookupByLibrary.simpleMessage("아니요"),
         "no_activity": MessageLookupByLibrary.simpleMessage("활동 없음"),
         "no_businesses": MessageLookupByLibrary.simpleMessage("찾은 비즈니스 없음"),
@@ -282,7 +276,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "simple": MessageLookupByLibrary.simpleMessage("간편"),
         "skip_button": MessageLookupByLibrary.simpleMessage("건너뛰기"),
         "slippage": MessageLookupByLibrary.simpleMessage("슬리피지"),
-        "smart": MessageLookupByLibrary.simpleMessage("스마트"),
+        "smart": MessageLookupByLibrary.simpleMessage(
+            "우리는 공정한 수수료를 부과하여 레스토랑을 더 많이 제공합니다."),
         "social": MessageLookupByLibrary.simpleMessage("소셜"),
         "something_went_wrong":
             MessageLookupByLibrary.simpleMessage("오류가 발생했습니다"),
@@ -318,7 +313,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "use_fusd_explain": MessageLookupByLibrary.simpleMessage(
             "FuseDollars는 FuseCash 계정간 이동하는 것뿐 아니라 Fuse Cash 외의 Fuse 계정으로 이동하는 것도 자유롭습니다. FuseSwap DEX를 이용하여 Fuse Cash에서 바로 타 암호화화폐로 전환할 수도 있으며, 패시브인컴을 벌어들일 수 있도록 곧 사용이 가능해집니다."),
         "use_max": MessageLookupByLibrary.simpleMessage("최대치 사용"),
-        "useful": MessageLookupByLibrary.simpleMessage("유용"),
+        "useful": MessageLookupByLibrary.simpleMessage("지출 할 때마다 보상 받기"),
         "version": MessageLookupByLibrary.simpleMessage("앱 버전"),
         "visit_fuseio": MessageLookupByLibrary.simpleMessage(
             "fuse.io를 방문하시면 Fuse가 어떤 곳이고 배후에서 어떤 식으로 일을 처리하는지 자세히 알아보실 수 있습니다."),
@@ -354,8 +349,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "your_balance": MessageLookupByLibrary.simpleMessage("나의 잔고"),
         "your_balance_is_empty":
             MessageLookupByLibrary.simpleMessage("잔고가 없습니다"),
-        "your_projected_balance":
-            MessageLookupByLibrary.simpleMessage("Your projected balance"),
         "your_wallet_is_empty":
             MessageLookupByLibrary.simpleMessage("지갑이 비었습니다!")
       };

@@ -1,9 +1,9 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:fusecash/models/app_state.dart';
-import 'package:fusecash/models/tokens/stats.dart';
-import 'package:fusecash/redux/viewsmodels/action_details.dart';
+import 'package:peepl/models/app_state.dart';
+import 'package:peepl/models/tokens/stats.dart';
+import 'package:peepl/redux/viewsmodels/action_details.dart';
 
 class PriceLineChart extends StatelessWidget {
   final String tokenAddress;

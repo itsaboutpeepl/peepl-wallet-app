@@ -1,8 +1,8 @@
 import 'package:contacts_service/contacts_service.dart';
 import 'package:equatable/equatable.dart';
-import 'package:fusecash/models/app_state.dart';
-import 'package:fusecash/models/community/community.dart';
-import 'package:fusecash/models/tokens/token.dart';
+import 'package:peepl/models/app_state.dart';
+import 'package:peepl/models/community/community.dart';
+import 'package:peepl/models/tokens/token.dart';
 import 'package:redux/redux.dart';
 
 class TransferTileViewModel extends Equatable {
