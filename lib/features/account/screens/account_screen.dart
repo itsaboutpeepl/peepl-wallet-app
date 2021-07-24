@@ -91,9 +91,7 @@ class _AccountScreenState extends State<AccountScreen> {
                               label: '${I10n.of(context).top_up} \$',
                               menuIcon: 'top_up_icon.svg',
                               onTap: () {
-                                context.router.root.push(
-                                  TopupScreen(),
-                                );
+                                context.navigateTo(TopupScreen());
                               },
                             ),
                             MenuTile(
